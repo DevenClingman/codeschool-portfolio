@@ -6,10 +6,19 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+3.times do |topic|
+  Topic.create!(
+      title: "Topic #{topic}"
+    )
+end
+
+puts "3 topics created"
+
 10.times do |blog|
   Blog.create!(
     title: "My Blog Post number: #{blog}!!",
-    body: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains"
+    body: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains",
+    topic_id: Topic.last.id
   )
 end
 
@@ -24,10 +33,20 @@ end
 
 puts "5 skills created"
 
-9.times do |portfolio_item|
+8.times do |portfolio_item|
   Portfolio.create!(
   title: "Portfolio title #{portfolio_item}",
-  subtitle: "My great service",
+  subtitle: "Ruby on Rails",
+  body: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes",
+  main_image: "http://placehold.it/600X400",
+  thumb_image: "http://placehold.it/350X200"
+  )
+end
+
+1.times do |portfolio_item|
+  Portfolio.create!(
+  title: "Portfolio title #{portfolio_item}",
+  subtitle: "Angular",
   body: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes",
   main_image: "http://placehold.it/600X400",
   thumb_image: "http://placehold.it/350X200"
@@ -35,3 +54,11 @@ puts "5 skills created"
 end
 
 puts "9 portfolio items created"
+
+3.times do |technology|
+  Portfolio.last.technologies.create!(
+    name: "Technology #{technology}"
+    )
+end
+
+puts "3 technologies created"
