@@ -1,10 +1,4 @@
 GIT
-  remote: https://github.com/DevenClingman/clingman_view_tool
-  revision: 81f821554521033d4d7cc9dd58c3cc425398351c
-  specs:
-    clingman_view_tool (0.1.0)
-
-GIT
   remote: https://github.com/twbs/bootstrap-rubygem
   revision: bd3d58a56c46d1f87785298706b136b73c192b8b
   specs:
@@ -60,6 +54,7 @@ GEM
     bindex (0.5.0)
     builder (3.2.3)
     byebug (9.0.6)
+    clingman_view_tool (0.1.0)
     coderay (1.1.1)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
@@ -220,7 +215,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap!
   byebug
-  clingman_view_tool!
+  clingman_view_tool (~> 0.1.0)
   coffee-rails (~> 4.2)
   devise (~> 4.3)
   font-awesome-rails (~> 4.7, >= 4.7.0.2)
