@@ -20,17 +20,27 @@
 
         <div class="cover-container">
 
-          <%= render "shared/application_nav" %>
+          <%= video_tag(
+              'Rainy_Street.mp4', 
+              id: 'background',
+              autoplay: true,
+              loop: true,
+              muted: true,
+              poster: 'home_bg.png'
 
-          <%= yield %>
+            )
+            %>
+            <%= render "shared/application_nav" %>
 
-          <%= render "shared/application_footer" %>
+            <%= yield %>
 
-          <%= copyright_generator %>
+            <%= render "shared/application_footer" %>
 
-          <%= source_helper("application") %>
+            <%= copyright_generator %>
 
-        </div>
+            <%= source_helper("application") %>
+
+          </div>
 
       </div>
 
