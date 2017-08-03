@@ -1,8 +1,8 @@
 class PortfoliosController < ApplicationController
-  before_action :set_portfolio_item, only: [:edit, :update, :show, :destroy]
-  layout "portfolio"
+  before_action :set_portfolio_item, only: [:edit, :show, :update, :destroy]
+  layout 'portfolio'
   access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, site_admin: :all
-
+  
   def index
     @portfolio_items = Portfolio.by_position
   end
@@ -11,7 +11,8 @@ class PortfoliosController < ApplicationController
     params[:order].each do |key, value|
       Portfolio.find(value[:id]).update(position: value[:position])
     end
-    render body: nil
+
+    render nothing: true
   end
 
   def angular
@@ -27,7 +28,7 @@ class PortfoliosController < ApplicationController
 
     respond_to do |format|
       if @portfolio_item.save
-        format.html { redirect_to portfolios_path, notice: 'Woo Hoo you did it!' }
+        format.html { redirect_to portfolios_path, notice: 'Your portfolio item is now live.' }
       else
         format.html { render :new }
       end
@@ -40,22 +41,23 @@ class PortfoliosController < ApplicationController
   def update
     respond_to do |format|
       if @portfolio_item.update(portfolio_params)
-        format.html { redirect_to portfolios_path, notice: 'The Record was successfully updated.' }
+        format.html { redirect_to portfolios_path, notice: 'The record successfully updated.' }
       else
         format.html { render :edit }
       end
     end
   end
+
   def show
   end
 
   def destroy
     # Destroy/delete the record
     @portfolio_item.destroy
+
     # Redirect
-    @portfolio_item.destroy
     respond_to do |format|
-      format.html { redirect_to portfolios_url, notice: 'The record was removed.' }
+      format.html { redirect_to portfolios_url, notice: 'Record was removed.' }
     end
   end
 
@@ -68,11 +70,10 @@ class PortfoliosController < ApplicationController
                                       :main_image,
                                       :thumb_image,
                                       technologies_attributes: [:id, :name, :_destroy]
-                                      )
+                                     )
   end
 
   def set_portfolio_item
     @portfolio_item = Portfolio.find(params[:id])
   end
-
 end
