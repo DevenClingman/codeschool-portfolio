@@ -224,8 +224,27 @@ body {
   padding: 30px;
 }
 
+.app-card-container{
+  color: black;
+  text-align: left;
+}
 
+.app-card-container > .card {
+  padding: 40px;
+}
 
+.app-card-container a {
+  color: blue;
+}
+
+.app-card-container h1 {
+  text-align: center;
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 
 

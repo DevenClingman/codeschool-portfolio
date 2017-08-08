@@ -1,12 +1,57 @@
-<div class="row">
-  
-  <div class="col-md-4">
-    <%= image_tag "profile.jpg", width: 300, alt: "profile image" %>
-  </div>
+<div class="app-card-container">
+  <div class="card">
+    <h1>About Me</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "profile.jpg", width: 300, alt: "profile image" %>
+      </div>
 
-  <div class="col-md-8">
-    <p>My name is Deven Clingman and I enjoy long walks on the beach and puppies... But that's not why you're here. You're here because you want a webiste built. I assure you that I would be able to provide you with website you need to improve your business.</p>
+      <div class="col-md-8">
+        <p>My name is Deven Clingman and I enjoy long walks on the beach and puppies... But that's not why you're here. You're here because you want a webiste built. I assure you that I would be able to provide you with website you need to improve your business.</p>
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controler="jobHistory"
+          >
+            Job History
+          </button>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controler="education"
+          >
+            Education
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              Job 1
+            </div>
+            <div class="card card-block">
+              Job 2
+            </div>
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              School 1
+            </div>
+            <div class="card card-block">
+              School 2
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
-
-
