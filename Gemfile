@@ -57,7 +57,7 @@ gem 'devise', '~> 4.3'
 
 gem 'petergate', '~> 1.7', '>= 1.7.5'
 
-gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+gem 'bootstrap', '~> 4.0.0.alpha6'
 
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
@@ -84,3 +84,7 @@ gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 6.1'
 
 gem 'redis', '~> 3.3', '>= 3.3.3'
+
+gem 'redcarpet', '~> 3.4'
+
+gem 'coderay', '~> 1.1', '>= 1.1.1'
