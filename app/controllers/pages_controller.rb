@@ -5,7 +5,8 @@ class PagesController < ApplicationController
     @portfolio = Portfolio.all
   end
 
-  def abouts  
+  def about
+    @skills = Skill.all
   end
 
   def contact
