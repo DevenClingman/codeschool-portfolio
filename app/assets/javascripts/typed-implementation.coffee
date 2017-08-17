@@ -6,7 +6,7 @@ ready = ->
       "I take pride in assisting business owners to represent themselves with a very professional website."
       "I hope you enjoy viewing my work."
     ]
-    typeSpeed: 125
+    typeSpeed: 75
   return
 
 $(document).ready ready
