@@ -9,8 +9,8 @@
 
 User.create!(
   email: "admin@gmail.com",
-  password: "1234567",
-  password_confirmation: "1234567",
+  password: "asdfasdf",
+  password_confirmation: "asdfasdf",
   name: "Admin User",
   roles: "site_admin"
   )
@@ -20,8 +20,8 @@ puts "1 admin user created"
 
 User.create!(
   email: "reg@gmail.com",
-  password: "1234567",
-  password_confirmation: "1234567",
+  password: "asdfasdf",
+  password_confirmation: "asdfasdf",
   name: "Regular User"
   )
 
