@@ -219,7 +219,7 @@ h6, .h6 {
 }
 
 .app-footer{
-  color: white;
+  color: beige;
 }
 
 .tech-news{
@@ -264,14 +264,24 @@ h6, .h6 {
   margin-bottom: 20px;
 }
 
-.nav nav-masthead app-nav {
-  color: black;
-}
-
 .contact-card{
   text-align: center;
   margin-right: 125px;
 }
+
+.masthead {
+  color: beige;
+}
+
+.nav-masthead .nav-link {
+  color: beige;
+}
+
+
+
+
+
+
 
 
 
