@@ -8,7 +8,7 @@
 
 
 User.create!(
-  email: "admin@gmail.com",
+  email: "dclingy@gmail.com",
   password: "asdfasdf",
   password_confirmation: "asdfasdf",
   name: "Admin User",
@@ -61,7 +61,8 @@ puts "5 skills created"
   subtitle: "Ruby on Rails",
   body: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes",
   main_image: "http://placehold.it/600X400",
-  thumb_image: "http://placehold.it/350X200"
+  thumb_image: "http://placehold.it/350X200",
+  site_url: "https://dmc-address-book.herokuapp.com/"
   )
 end
 
@@ -71,7 +72,8 @@ end
   subtitle: "Angular",
   body: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes",
   main_image: "http://placehold.it/600X400",
-  thumb_image: "http://placehold.it/350X200"
+  thumb_image: "http://placehold.it/350X200",
+  site_url: "https://dmc-address-book.herokuapp.com/"
   )
 end
 
