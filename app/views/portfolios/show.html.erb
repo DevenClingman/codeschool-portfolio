@@ -2,7 +2,7 @@
   <div class="row">
     
     <div class="col-md-7">
-      <%= link_to (image_tag portfolio_img(@portfolio_item.main_image, 'main'), width: '100%'), "#{@portfolio_item.site_url}", target: :_blank %>
+      <%= portfolio_link(@portfolio_item) %>
     </div>
 
     <div class="col-md-5">

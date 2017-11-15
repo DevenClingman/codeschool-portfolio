@@ -12,4 +12,12 @@ module PortfoliosHelper
       image_generator(height: '600', width: '400')
     end
   end
+
+  def portfolio_link portfolio_item
+    if portfolio_item.site_url == "#"
+      link_to (image_tag portfolio_img(@portfolio_item.main_image, 'main'), width: '100%'), "#{@portfolio_item.site_url}"
+    else
+      link_to (image_tag portfolio_img(@portfolio_item.main_image, 'main'), width: '100%'), "#{@portfolio_item.site_url}", target: :_blank
+    end
+  end
 end
