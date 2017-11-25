@@ -19,6 +19,7 @@
     <h3>
       <%= @blog.topic.title %>
     </h3>
+    <hr>
   </strong>
 
   <%= link_to 'Edit', edit_blog_path(@blog), class: "btn btn-primary" if logged_in?(:site_admin) %>
