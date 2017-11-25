@@ -15,12 +15,13 @@
   </span>
  
 </nav>
+  <strong>
+    <h3>
+      <%= @blog.topic.title %>
+    </h3>
+  </strong>
 
-  <p>
-    <%= @blog.topic.title %>
-  </p>
-
-  <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
+  <%= link_to 'Edit', edit_blog_path(@blog), class: "btn btn-primary" if logged_in?(:site_admin) %>
 
   <p>
     <%= markdown @blog.body %>
