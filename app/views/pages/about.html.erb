@@ -1,16 +1,22 @@
   <div class="app-card-container">
     <div class="card">
-      <h1>About Me</h1>
-
-
-
+      <div class="row">
+        <div class="col-md-4"></div>
+        <h1 class="col-md-4 static-header">
+          About Me
+          <hr>
+        </h1>
+        <div class="col-md-4"></div>
+      </div>
       <div class="row">
         <div class="col-md-4">
-          <%= image_tag "profile.jpg", width: 300, alt: "profile image" %>
+          <%= image_tag "profile.jpg", width: 300, alt: "profile image", id: "about-image" %>
         </div>
 
         <div class="col-md-8">
-          <p>I love to learn and create new things. Thats why I chose development as my career path. I recently dedicated 8-10 hours a day for 3 months studying development. My passion for web development stems from the possibility of imagining something in my mind then knowing how to create it. </p>
+          <div>
+            <h3 id="about-me-text">I love to learn and create new things. Thats why I chose development as my career path. My passion for web development stems from the possibility of imagining something in my mind then knowing how to create it. </h3>
+          </div>  
         </div>
       </div>
     </div>

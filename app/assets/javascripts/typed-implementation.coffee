@@ -1,10 +1,9 @@
 ready = ->
   Typed.new '.element',
     strings: [
-      "My name is Deven Clingman"
-      "A proper website is very important in today's business world."
-      "I take pride in assisting business owners to represent themselves with a very professional website."
-      "I hope you enjoy viewing my work."
+      "I'm a coder"
+      "I'm a developer"
+      "I'm Deven"
     ]
     typeSpeed: 75
   return

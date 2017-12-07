@@ -214,7 +214,7 @@ h6, .h6 {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url('Rainy_Street.jpg') no-repeat;
+  background: url('Love-Coding.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -243,7 +243,8 @@ h6, .h6 {
 }
 
 .app-card-container > .card {
-  padding: 40px;
+  padding: 30px;
+  background: #96928e;
 }
 
 .app-card-container a {
@@ -265,8 +266,16 @@ h6, .h6 {
 }
 
 .contact-card{
-  text-align: center;
-  margin-right: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card > div {
+  padding: 40px;
+  margin-bottom: 100px;
+  background: #558496;
+  border-radius: 10%;
 }
 
 .masthead {
@@ -287,4 +296,22 @@ h6, .h6 {
 
 .contact-info h3, p {
   margin-left: 121px;
+}
+
+.static-header{
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+
+#about-image {
+  border-radius: 100%;
+}
+
+hr {
+  border-style: solid;
+  border-color: black;
+}
+
+#about-me-text {
+  padding-top: 45px;
 }

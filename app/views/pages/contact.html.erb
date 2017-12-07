@@ -1,20 +1,21 @@
 <div class="app-card-container">
   <div class="card">
-    <h1>Contact</h1>
-
-    <hr>
-
     <div class="row">
-      <div class="col-md-6">
-        <div class="contact-info">
-          <h2>Deven's Number</h2>
-          <div class="contact-card">
-            <h3><%= number_to_phone "8018847016" %></h3>
-
-            <h3>Email</h3>
-
-            <p class="btn btn-success"><a href="mailto:dclingy@gmail.com?subject=PortfolioContact" "email me">Email me</a> </p>
-          </div>
+        <div class="col-md-4"></div>
+        <h1 class="col-md-4 static-header">
+          Contact
+          <hr>
+        </h1>
+        <div class="col-md-4"></div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6 contact-card">
+        <div class="text-center">
+          <h4>Cell: <%= number_to_phone "8018847016" %></h4>
+          <a href="mailto:dclingy@gmail.com?subject=PortfolioContact">
+            <button class="btn btn-primary">Email Me Here</button>
+          </a>
         </div>
       </div>
       <div class="col-md-6">
@@ -23,7 +24,3 @@
     </div>
   </div>
 </div>
-
-
-
-
