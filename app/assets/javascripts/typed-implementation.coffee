@@ -1,11 +1,11 @@
 ready = ->
   Typed.new '.element',
     strings: [
-      "I'm a coder"
-      "I'm a developer"
-      "I'm Deven"
+      "Im a coder"
+      "Im a developer"
+      "Im deven"
     ]
-    typeSpeed: 75
+    typeSpeed: 45
   return
 
 $(document).ready ready

@@ -70,6 +70,7 @@ class PortfoliosController < ApplicationController
                                       :main_image,
                                       :thumb_image,
                                       :site_url,
+                                      :github_url,
                                       technologies_attributes: [:id, :name, :_destroy]
                                      )
   end
