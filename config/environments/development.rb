@@ -54,20 +54,6 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
-  config.action_mailer.delivery_method = :smtp
-
-  config.action_mailer.smtp_settings = {
-
-    user_name:ENV.fetch("SPARKPOST_USER_NAME"),
-    password: ENV.fetch("SPARKPOST_PASSWORD"),
-    address: ENV.fetch("SPARKPOST_ADDRESS"),
-    port: ENV.fetch("SPARKPOST_PORT"),
-    enable_starttls_auto: true,
-    format: :html,
-    from: 'localhost:3000'
-
-  }
-
 end
 
 
