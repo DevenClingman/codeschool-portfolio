@@ -92,4 +92,18 @@ Rails.application.configure do
   config.action_cable.allowed_request_origins = ['https://dmc-portfolio.herokuapp.com', 'http://dmc-portfolio.herokuapp.com']
   config.action_cable.url = "wss://dmc-portfolio.herokuapp.com/cable"
 
+    config.action_mailer.delivery_method = :smtp
+
+  config.action_mailer.smtp_settings = {
+
+    user_name:ENV.fetch("SPARKPOST_USER_NAME"),
+    password: ENV.fetch("SPARKPOST_PASSWORD"),
+    address: ENV.fetch("SPARKPOST_ADDRESS"),
+    port: ENV.fetch("SPARKPOST_PORT"),
+    enable_starttls_auto: true,
+    format: :html,
+    from: 'localhost:3000'
+
+  }
+
 end
