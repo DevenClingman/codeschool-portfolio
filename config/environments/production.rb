@@ -104,6 +104,7 @@ Rails.application.configure do
     format: :html,
     from: 'www.devenclingman.com'
 
+
   }
 
 end
